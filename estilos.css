@@ -1,0 +1,208 @@
+*
+/* RESET */ {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #bcbcbc;
+}
+/* ---- HEADER----- */
+
+.header__contacto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8px;
+  background-color: rgb(2, 33, 79);
+  font-size: 15px;
+  text-align-last: right;
+  background-size: cover;
+  color: white;
+  height: 30px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.header__icono{
+  height: 20px;
+}
+
+.header__logo {
+  margin: 20px;
+  height: 80px;
+  width: 90px;
+}
+
+/* ---------NAVBAR------------ */
+
+.header__navbar ul {
+  padding: 3rem;
+  font-size: 28px;
+}
+
+.header__navbar li {
+  display: inline-block;
+}
+
+.header__navbar a {
+  color: black;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+/* ------------MAIN-------------- */
+
+.main__imgsuperior--inicio {
+  background-image: url(./img/fondoinicio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.main__imgsuperior--servicios {
+  background-image: url(./img/mantenimientoind.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.main__imgsuperior--noticias {
+  background-image: url(./img/noticias.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.main__imgsuperior--clientes {
+  background-image: url(./img/estrechodemanos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.main__imgsuperior--bna {
+  background-image: url(./img/banconacion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.main__imgsuperior--contacto {
+  background-image: url(./img/contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.main__texto--inicio {
+  font-family: "Bebas Neue", cursive;
+  font-size: 58px;
+  transform: translate(230px,330px) ;
+}
+
+.main__titulo--grande {
+  font-family: "Bebas Neue", cursive;
+  font-size: 90px;
+}
+
+.main__titulo--medio {
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: #000000;
+}
+
+.main__titulo--filosofia {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  color: #021f4b;
+}
+
+.main__titulo--chico {
+  font-size: 28px;
+  margin: 10px;
+}
+
+.main__contenedores {
+  margin: 15px;
+  display: inline-block;
+}
+
+.main__experiencia {
+  padding: 15px;
+}
+
+.main__titulo--section {
+  font-family: "Bebas Neue", cursive;
+  font-size: 48px;
+}
+
+.main__texto {
+  font-size: 25px;
+  margin: 8px;
+}
+
+.main__img {
+  height: 380px;
+  margin: 10px;
+}
+
+.main__img--servicios {
+  height: 450px;
+}
+
+.main__titulo--clientes {
+  font-family: "Bebas Neue", cursive;
+  font-size: 48px;
+  text-align: center;
+  margin: 20px;
+}
+
+.main__flex--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__img--clientes {
+  margin: 20px;
+}
+
+.main__texto--clientes {
+  font-size: 25px;
+  text-align: center;
+  margin: 15px;
+}
+
+/* ---------FOOTER-------- */
+
+.footer {
+  background-color: #021f4b;
+}
+
+.footer__contacto {
+  font-size: 18px;
+  color: white;
+}
+
+.footer__texto {
+  font-size: 15px;
+  color: white;
+}
+
+.footer__logo {
+  height: 80px;
+  width: 90px;
+}
+
+/* --------------------- */
