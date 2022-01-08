@@ -11,10 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -23,33 +21,41 @@
 
     <header class="header">
         <div class="header__contacto">
-            <img src="./icon/outline_location_on_white_24dp.png" alt="locacion" class="header__icono"> Santiago de Chile 2801,
+            <img src="./icon/outline_location_on_white_24dp.png" alt="locacion" class="header__icono"> Santiago de Chile
+            2801,
             Santa Fe,
-            Argentina <img src="./icon/outline_call_white_24dp.png" alt="telefono" class="header__icono"> +54 9 342 4725519 <img
-                src="./icon/outline_email_white_24dp.png" alt="email" class="header__icono">info@proactivaingenieria.com
+            Argentina <img src="./icon/outline_call_white_24dp.png" alt="telefono" class="header__icono"> +54 9 342
+            4725519 <img src="./icon/outline_email_white_24dp.png" alt="email"
+                class="header__icono">info@proactivaingenieria.com
         </div>
 
         <!-- ------ NAV BAR--------- -->
-
-        <nav class="header__navbar">
-            <ul>
-                <li> <a href="index.html">Inicio</a></li>
-                <li> <a href="servicios.html">Servicios</a></li>
-                <li> <a href="noticias.html">Noticias</a> </li>
-                <li> <a href="nuestrosclientes.html">Nuestros clientes</a></li>
-                <li> <a href="creditosbna.html">Créditos BNA</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header__container">
+            <div class="header__menu">
+                <img src="./icon/menu-regular-36.png" alt="menu">
+            </div>
+            <img src="./img/logoproactiva.jpg" alt="logo proactiva" class="header__logo">
+            <nav class="header__navbar">
+                <ul>
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li> <a href="servicios.html">Servicios</a></li>
+                    <li> <a href="noticias.html">Noticias</a> </li>
+                    <li> <a href="nuestrosclientes.html">Nuestros clientes</a></li>
+                    <li> <a href="creditosbna.html">Créditos BNA</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- MAIN -->
 
     <main class="main">
-        <div class="main__imgsuperior--noticias" >
+        <div class="main__imgsuperior--noticias">
             <h1 class="main__titulo--grande">Noticias</h1>
         </div>
-        <section>
+
+        <section class="main__section">
             <h3 class="main__titulo--chico">
                 Consideraciones para el monitoreo de co2 en ambientes interiores
             </h3>
@@ -87,8 +93,18 @@
             <div>
                 <h3 class="main__titulo--chico">Niveles de CO2 y porcentaje de aire exhalado estimados</h3>
             </div>
-            <div>
-                <img src="img/CO2info.jpg" alt="informacion de co2 en el aire" class="main__img">
+            <div class="main__grilla--noticias">
+                <div class="main__grilla--1">Nivel de CO2</div>
+                <div class="main__grilla--2">~ 400-500 ppm</div>
+                <div class="main__grilla--3">~ 800 ppm</div>
+                <div class="main__grilla--4">~ 4.400 ppm</div>
+                <div class="main__grilla--5">Indicación del nivel de ventilación</div>
+                <div class="main__grilla--6">Ambiente muy bien ventilado</div>
+                <div class="main__grilla--7">El 1% del aire que está respirando ya ha sido respirado por alguien en el
+                    mismo ambiente. Esto puede empezar a ser riesgoso.</div>
+                <div class="main__grilla--8">El 10% del aire que está respirando ya lo ha respirado por otra persona.
+                    Ésta es una situación muy riesgosa. Los niveles tan altos se observan comúnmente en ambientes
+                    densamente ocupados con poca ventilación.</div>
             </div>
             <p class="main__texto">
                 Limitaciones:
@@ -134,12 +150,13 @@
                     ventilación y
                     tratamiento de aire, pues algunas instalaciones pueden requerir asesoramiento adicional.</li>
             </ul>
+            <br>
             <div class="main__texto">
                 FUENTE:<a
                     href="https://www.argentina.gob.ar/ciencia/unidad-coronavirus/ventilar">https://www.argentina.gob.ar/ciencia/unidad-coronavirus/ventilar</a>
             </div>
         </section>
-        <section>
+        <section class="main__section">
             <div>
                 <h3 class="main__titulo--chico">La importancia de la ventilación en el ambiente de trabajo</h3>
             </div>
@@ -163,9 +180,12 @@
                 Dependiendo de la actividad que desarrolle en su lugar de trabajo, recomendamos que se asesore con
                 un
                 especialista o empresa profesional en ventilación.
+            </p>
+            <br>
+            <div class="main__texto">
                 FUENTE: <a
                     href="https://www.serkingelsalvador.com/importancia-de-ventilacion-en-el-trabajo">https://www.serkingelsalvador.com/importancia-de-ventilacion-en-el-trabajo</a>
-            </p>
+            </div>
         </section>
     </main>
 
@@ -181,13 +201,13 @@
                 ventas@proactivaingenieria.com
             </p>
         </div>
-        <img src="img/logoproactiva.jpg" alt="logo proactiva"  class="footer__logo">
+        <img src="img/logoproactiva.jpg" alt="logo proactiva" class="footer__logo">
         <div>
             <p class="footer__texto">Soluciones en aireación, ventilación y filtrado
                 Gestion y mantenimiento de activos</p>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

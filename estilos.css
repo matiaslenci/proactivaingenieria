@@ -9,31 +9,26 @@
 }
 
 body {
-  background-color: #bcbcbc;
+  background-color: #cfcfcf;
 }
 /* ---- HEADER----- */
 
 .header__contacto {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
   padding-right: 8px;
   background-color: rgb(2, 33, 79);
-  font-size: 15px;
+  font-size: 16px;
   text-align-last: right;
   background-size: cover;
   color: white;
   height: 30px;
 }
 
-.header__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.header__icono{
+.header__icono {
   height: 20px;
 }
 
@@ -43,8 +38,18 @@ body {
   width: 90px;
 }
 
-/* ---------NAVBAR------------ */
+.header__menu {
+  display: none;
+}
 
+/*-------- NAVBAR------- */
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 .header__navbar ul {
   padding: 3rem;
   font-size: 28px;
@@ -59,6 +64,12 @@ body {
   text-transform: uppercase;
   padding: 0.5rem;
   font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+}
+
+.header__navbar a:hover {
+  border-bottom: 4px solid #000000;
+  text-shadow: #ffff 2px 2px 3px;
 }
 
 /* ------------MAIN-------------- */
@@ -68,6 +79,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+  background-attachment: fixed;
 }
 
 .main__imgsuperior--servicios {
@@ -75,6 +87,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+  background-attachment: fixed;
 }
 
 .main__imgsuperior--noticias {
@@ -82,6 +95,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+  background-attachment: fixed;
 }
 
 .main__imgsuperior--clientes {
@@ -89,6 +103,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+  background-attachment: fixed;
 }
 
 .main__imgsuperior--bna {
@@ -96,6 +111,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+  background-attachment: fixed;
 }
 
 .main__imgsuperior--contacto {
@@ -103,17 +119,53 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
+  background-attachment: fixed;
 }
 
 .main__texto--inicio {
   font-family: "Bebas Neue", cursive;
   font-size: 58px;
-  transform: translate(230px,330px) ;
+  padding: 300px 0px 0px 400px;
+  text-shadow: #ffff 5px 2px 3px;
+}
+
+.main__cualidades {
+  display: grid;
+  padding: 50px 184px 150px 184px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 270px;
+  justify-self: start;
+  align-self: stretch;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.main__cualidades img {
+  margin: 20px 0px 15px 0px;
+  height: 60px;
+}
+
+.main__cualidades--titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
+  color: #021f4b;
+  padding: 10px 0px;
+}
+
+.main__cualidades--texto {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0px;
+  text-align: start;
+  line-height: 23px;
 }
 
 .main__titulo--grande {
   font-family: "Bebas Neue", cursive;
   font-size: 90px;
+  padding: 200px;
+  text-align: center;
+  text-shadow: #ffff 5px 2px 3px;
 }
 
 .main__titulo--medio {
@@ -122,24 +174,41 @@ body {
   color: #000000;
 }
 
-.main__titulo--filosofia {
-  font-family: "Bebas Neue", cursive;
-  font-size: 30px;
-  color: #021f4b;
-}
-
 .main__titulo--chico {
-  font-size: 28px;
+  font-size: 32px;
+  margin: 40px 0px;
+}
+
+.main__contenedor {
+  padding: 50px 10%;
+}
+
+.main__contenedor--grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-self: center;
+  grid-template-areas: "text img";
+}
+
+.main__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  color: #000000;
+}
+
+.main__texto {
+  font-size: 25px;
+  margin: 8px;
+  grid-area: "text";
+}
+
+.main__img--grid {
+  height: 380px;
   margin: 10px;
-}
-
-.main__contenedores {
-  margin: 15px;
-  display: inline-block;
-}
-
-.main__experiencia {
-  padding: 15px;
+  grid-area: "img";
 }
 
 .main__titulo--section {
@@ -147,62 +216,290 @@ body {
   font-size: 48px;
 }
 
-.main__texto {
-  font-size: 25px;
-  margin: 8px;
-}
-
 .main__img {
   height: 380px;
-  margin: 10px;
 }
 
 .main__img--servicios {
   height: 450px;
 }
 
-.main__titulo--clientes {
+.main__titulo--nclientes {
   font-family: "Bebas Neue", cursive;
-  font-size: 48px;
+  font-size: 52px;
   text-align: center;
   margin: 20px;
 }
 
-.main__flex--img {
+.main__img--nclientes {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.main__img--clientes {
+
+.main__texto--nclientes{
+  font-size: 25px;
+  text-align: center;
+  margin: 45px 0px;
+}
+
+.main__img--nclientesmovil {
+  display: none;
+}
+
+.main__nclientes--img {
   margin: 20px;
+}
+
+.main__titulo--servicios{
+  font-family: "Bebas Neue", cursive;
+  font-size: 55px;
+  color: #000000;
+  margin:30px 0px 0px;
+  text-align: center;
 }
 
 .main__texto--clientes {
   font-size: 25px;
   text-align: center;
-  margin: 15px;
+  margin: 25px auto 60px;
+}
+
+.main__section {
+  margin: 75px 75px;
+  text-align: left;
+}
+
+.main__texto--clientes{
+  font-size: 25px;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+.main__titulo--clientes{
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  color: #000000;
+  margin:45px 0px;
+  text-align: center;
+}
+
+.main__img--clientes{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  margin:50px;
+}
+
+.main__credito{
+  margin: 75px 75px;
+  text-align: center;
+}
+
+.titulo__credito{
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px;
+  justify-content: center;
+}
+
+.main__img--credito{
+  width: 50px;
+}
+
+.main__titulo--credito{
+  font-size: 38px;
+}
+
+.main__texto--credito{
+  font-size: 25px;
+  margin: 0px 0px;
+  text-align: center;
+}
+
+.main__link--credito{
+  font-size: 25px;
+  margin: 30px 75px;
+}
+
+
+/* GRILLA NOTICIA */
+
+.main__grilla--noticias {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 400px 400px;
+  grid-template-areas:
+    "co2 nivel"
+    "a ambiente"
+    "b riesgoso"
+    "c muyriesgoso";
+}
+
+.main__grilla--1 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: co2;
+}
+
+.main__grilla--2 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: a;
+}
+
+.main__grilla--3 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: b;
+}
+
+.main__grilla--4 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: c;
+}
+
+.main__grilla--5 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: nivel;
+}
+
+.main__grilla--6 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: ambiente;
+}
+
+.main__grilla--7 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: riesgoso;
+}
+
+.main__grilla--8 {
+  font-size: 28px;
+  border: 1px solid #000000;
+  grid-area: muyriesgoso;
 }
 
 /* ---------FOOTER-------- */
 
 .footer {
   background-color: #021f4b;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .footer__contacto {
   font-size: 18px;
   color: white;
+  height: 130px;
+  width: 350px;
+  text-align: start;
+  margin: 20px;
 }
 
 .footer__texto {
   font-size: 15px;
+  text-align: left;
   color: white;
+  padding: 20px;
 }
 
 .footer__logo {
   height: 80px;
   width: 90px;
+  margin-left: 350px;
 }
 
-/* --------------------- */
+/* -------FOOTER-------------- */
+
+/* -------RESPONSIVE---- */
+
+/* ------MOVIL---- */
+
+@media (max-width: 768px) {
+  .header__navbar {
+    display: none;
+  }
+
+  .header__contacto {
+    display: none;
+  }
+
+  .header__container {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .header__menu {
+    display: inline;
+    padding-right: 5%;
+  }
+
+  .header__menu img {
+    width: 70px;
+  }
+
+  .header__logo {
+    margin: 20px;
+    height: 90px;
+    width: 120px;
+  }
+
+  .main__imgsuperior--inicio {
+    width: 800px;
+    height: 600px;
+  }
+
+  .main__imgsuperior--noticias {
+    width: max-content;
+  }
+
+  .main__texto--inicio {
+    padding: 0;
+  }
+
+  .main__grilla--noticias {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 300px 300px;
+    grid-template-areas:
+      "co2 nivel"
+      "a ambiente"
+      "b riesgoso"
+      "c muyriesgoso";
+  }
+
+  .main__img--nclientesmovil {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__img--nclientes {
+    display: none;
+  }
+
+  .main__cualidades {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .main__contenido {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "text"
+      "img";
+  }
+
+  .footer__logo {
+    height: 80px;
+    width: 90px;
+    margin-left: 60px;
+  }
+}
