@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon/proactivafavicon.ico" type="image/x-icon">
     <title>proactivaingenieria</title>
+    <link rel="stylesheet" href="./css-bt/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,125 +35,173 @@
 
         <!-- ------ NAV BAR--------- -->
         <div class="header__container">
-            <img src="./img/logoproactiva.jpg" alt="logo proactiva" class="header__logo">
-            <nav class="header__navbar">
-                <ul>
-                    <li> <a href="index.html">Inicio</a></li>
-                    <li> <a href="servicios.html">Servicios</a></li>
-                    <li> <a href="noticias.html">Noticias</a> </li>
-                    <li> <a href="nuestrosclientes.html">Nuestros clientes</a></li>
-                    <li> <a href="creditosbna.html">Créditos BNA</a></li>
-                    <li> <a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- MAIN -->
-
-    <main class="main">
-        <div class="main__imgsuperior--servicios">
-            <h1 class="main__titulo--grande">Servicios</h1>
-        </div>
-
-        <section>
-            <h2 class="main__titulo--servicios">
-                Proactiva ingeniería ofrece
-            </h2>
-            <div class="main__contenedor">
-                <h3 class="main__titulo--chico">
-                    Gestión de proyectos
-                </h3>
-                <div class="main__contenedor--grid">
-                    <p class="main__texto">
-                        Proyectos de arquitectura sanitaria, de instalaciones clasificadas, de HVAC, de regulación y
-                        control, de
-                        electricidad y de servicios e instalaciones especiales.
-                        Intervenimos en cada una de las fases del proyecto, cubriendo todas las necesidades de la planta
-                        productiva; desde la definición de los lineamientos generales hasta llegar al proyecto
-                        definitivo
-                        con
-                        planos de detalle y pliegos de especificaciones técnicas, documentación, dirección y
-                        gerenciamiento
-                        de
-                        obras y todo lo que el proyecto requiera.
-                    </p>
-                    <img src="img/gestiondeproyectos.jpg" alt="gestion de proyectos" class="main__img--grid">
+            <nav class="header__navbar navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="./img/logoproactiva.jpg" alt="logo proactiva"
+                            class="header__logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="noticias.html">noticias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nuestrosclientes.html">nuestros clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="creditosbna.html">créditos bna</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="main__contenedor">
-            <h3 class="main__titulo--chico">
-                Servicios e instalaciones especiales
-            </h3>
-            <div class="main__contenedor--grid">
-                <p class="main__texto">
-                    Realizamos la provisión y montaje del equipamiento, regulación y puesta en marcha con profesionales
-                    y
-                    soldadores calificados. Proveemos la documentación para que la instalación sea calificable según las
-                    normas IRAM, ISO o GMP, de los siguientes sistemas:
-                </p>
-                <ul class="main__texto">
-                    <li> Sistemas de agua</li>
-                    <li> Sistemas de vapor y condensado industrial</li>
-                    <li> Sistemas de aire comprimido</li>
-                    <li> Sistemas de lavado CIP (Cleaning In Place- Limpieza In Situ) – SIP (Sterilization In Place-
-                        Esterilización In Situ).</li>
-                    <li> Instalaciones eléctricas (Media y baja tensión, energía de emergencia, grupo electrógeno,
-                        transferencia automática, corrección de factor de potencia, etc.)</li>
-                </ul>
+            </nav>
 
-                <img src="img/servicioseinstalaciones.jpg" alt="servicios de instalaciones"
-                    class="main__img--servicios">
-            </div>
-        </section>
-        <section class="main__contenedor">
-            <h3 class="main__titulo--chico">
-                Mantenimiento
-            </h3>
-            <div class="main__contenedor--grid">
-                <p class="main__texto">
-                    Realizamos mantenimientos preventivos y correctivos, con el fin de alargar la vida útil de sus
-                    activos y
-                    habilitar la continuidad de la zona en el cumpliendo de las normativas.
-                    Normalmente se exige mantener unas condiciones ambientales muy específicas de forma muy ajustada, lo
-                    que
-                    exige una conservación especialmente cuidada de toda la instalación y sus componentes, temperatura,
-                    humedad, pureza del aire y sus respectivas tolerancias son algunos de los parámetros que condicionan
-                    los
-                    procesos que se llevan a cabo en estas industrias.
-                    Desarrollamos procedimientos operativos estandarizados de acuerdo a las necesidades y a los
-                    requerimientos de las industrias en cuestión.
-                    El servicio de mantenimiento que ofrece la empresa otorga la posibilidad de habilitar la continuidad
-                    de
-                    las zonas de trabajo intervenidas en cumplimiento de las normativas GMP, ISO y FDA requeridas.
-                    Un plan de Mantenimiento Integral es fundamental para el correcto funcionamiento de la instalación,
-                    su
-                    adecuado rendimiento, su fiabilidad y su durabilidad en el tiempo
-                </p>
-                <img src="img/mantenimiento.jpg" alt="mantenimiento" class="main__img--grid">
-            </div>
-        </section>
-    </main>
+            <!-- MAIN -->
 
-    <!-- FOOTER -->
+            <main class="main">
+                <div class="main__imgsuperior--servicios">
+                    <h1 class="main__titulo--grande">Servicios</h1>
+                </div>
 
-    <footer class="footer">
-        <div>
-            <p class="footer__contacto">¡Contáctenos para solicitar asesoramiento!
-                Tel: 342-4725519
-                Santiago de Chile 2801 – Santa Fe
-                info@proactivaingenieria.com
-                ing@proactivaingenieria.com
-                ventas@proactivaingenieria.com
-            </p>
-        </div>
-        <img src="img/logoproactiva.jpg" alt="logo proactiva" class="footer__logo">
-        <div>
-            <p class="footer__texto">Soluciones en aireación, ventilación y filtrado
-                Gestion y mantenimiento de activos</p>
-        </div>
-    </footer>
+                <h2 class="main__titulo--servicios">
+                    Proactiva ingeniería ofrece
+                </h2>
+
+                <!-- GESTION DE PROYECTOS -->
+                <section>
+                    <div class="main__contenedor">
+                        <h3 class="main__titulo--chico">
+                            Gestión de proyectos
+                        </h3>
+                        <div class="main__contenedor--servicios">
+                            <p class="main__texto--grid">
+                                Proyectos de arquitectura sanitaria, de instalaciones clasificadas, de HVAC, de
+                                regulación y
+                                control, de
+                                electricidad y de servicios e instalaciones especiales.
+                                Intervenimos en cada una de las fases del proyecto, cubriendo todas las necesidades de
+                                la planta
+                                productiva; desde la definición de los lineamientos generales hasta llegar al proyecto
+                                definitivo
+                                con
+                                planos de detalle y pliegos de especificaciones técnicas, documentación, dirección y
+                                gerenciamiento
+                                de
+                                obras y todo lo que el proyecto requiera.
+                            </p>
+                            <img src="img/gestiondeproyectos.jpg" alt="gestion de proyectos" class="main__img--grid">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SERVICIOS E INSTALACIONES -->
+                <section class="main__contenedor">
+                    <h3 class="main__titulo--chico">
+                        Servicios e instalaciones especiales
+                    </h3>
+                    <div class="main__contenedor--servicios2">
+                        <div class="main__texto--grid2">
+                            <p class="main__texto">
+                                Realizamos la provisión y montaje del equipamiento, regulación y puesta en marcha con
+                                profesionales
+                                y
+                                soldadores calificados. Proveemos la documentación para que la instalación sea
+                                calificable
+                                según las
+                                normas IRAM, ISO o GMP, de los siguientes sistemas:
+                            </p>
+                            <ul class="main__texto">
+                                <li> Sistemas de agua</li>
+                                <li> Sistemas de vapor y condensado industrial</li>
+                                <li> Sistemas de aire comprimido</li>
+                                <li> Sistemas de lavado CIP (Cleaning In Place- Limpieza In Situ) – SIP (Sterilization
+                                    In
+                                    Place-
+                                    Esterilización In Situ).</li>
+                                <li> Instalaciones eléctricas (Media y baja tensión, energía de emergencia, grupo
+                                    electrógeno,
+                                    transferencia automática, corrección de factor de potencia, etc.)</li>
+                            </ul>
+                        </div>
+                        <img src="img/servicioseinstalaciones.jpg" alt="servicios de instalaciones"
+                            class="main__img--grid2">
+                    </div>
+                </section>
+
+                <!-- MANTENIMIENTO -->
+                <section class="main__contenedor">
+                    <h3 class="main__titulo--chico">
+                        Mantenimiento
+                    </h3>
+                    <div class="main__contenedor--servicios">
+                        <p class="main__texto--grid">
+                            Realizamos mantenimientos preventivos y correctivos, con el fin de alargar la vida útil de
+                            sus
+                            activos y
+                            habilitar la continuidad de la zona en el cumpliendo de las normativas.
+                            Normalmente se exige mantener unas condiciones ambientales muy específicas de forma muy
+                            ajustada, lo
+                            que
+                            exige una conservación especialmente cuidada de toda la instalación y sus componentes,
+                            temperatura,
+                            humedad, pureza del aire y sus respectivas tolerancias son algunos de los parámetros que
+                            condicionan
+                            los
+                            procesos que se llevan a cabo en estas industrias.
+                            Desarrollamos procedimientos operativos estandarizados de acuerdo a las necesidades y a los
+                            requerimientos de las industrias en cuestión.
+                            El servicio de mantenimiento que ofrece la empresa otorga la posibilidad de habilitar la
+                            continuidad
+                            de
+                            las zonas de trabajo intervenidas en cumplimiento de las normativas GMP, ISO y FDA
+                            requeridas.
+                            Un plan de Mantenimiento Integral es fundamental para el correcto funcionamiento de la
+                            instalación,
+                            su
+                            adecuado rendimiento, su fiabilidad y su durabilidad en el tiempo
+                        </p>
+                        <img src="img/mantenimiento.jpg" alt="mantenimiento" class="main__img--grid">
+                    </div>
+                </section>
+
+
+            </main>
+
+            <!-- FOOTER -->
+
+            <footer class="footer">
+                <div>
+                    <p class="footer__contacto">¡Contáctenos para solicitar asesoramiento!
+                        Tel: 342-4725519
+                        Santiago de Chile 2801 – Santa Fe
+                        info@proactivaingenieria.com
+                        ing@proactivaingenieria.com
+                        ventas@proactivaingenieria.com
+                    </p>
+                </div>
+                <img src="img/logoproactiva.jpg" alt="logo proactiva" class="footer__logo">
+                <div>
+                    <p class="footer__texto">Soluciones en aireación, ventilación y filtrado
+                        Gestion y mantenimiento de activos</p>
+                </div>
+            </footer>
+
+            <!-- JAVASCRIP BOOTSTARP -->
+            <script src="./js-bt/bootstrap.min.js"></script>
+
 
 </body>
 

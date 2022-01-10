@@ -44,19 +44,19 @@ body {
 
 /*-------- NAVBAR------- */
 
-.header__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
 .header__navbar ul {
-  padding: 3rem;
+  padding: 30px;
   font-size: 28px;
 }
 
-.header__navbar li {
-  display: inline-block;
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0 0 0);
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: normal;
 }
 
 .header__navbar a {
@@ -67,9 +67,10 @@ body {
   text-decoration: none;
 }
 
-.header__navbar a:hover {
-  border-bottom: 4px solid #000000;
+.nav-item:hover {
+  border-bottom: 3px solid #000000;
   text-shadow: #ffff 2px 2px 3px;
+  background-color: #cfcfcf;
 }
 
 /* ------------MAIN-------------- */
@@ -80,6 +81,7 @@ body {
   background-repeat: no-repeat;
   height: 500px;
   background-attachment: fixed;
+  color: #000000;
 }
 
 .main__imgsuperior--servicios {
@@ -88,6 +90,7 @@ body {
   background-repeat: no-repeat;
   height: 500px;
   background-attachment: fixed;
+  color: #000000;
 }
 
 .main__imgsuperior--noticias {
@@ -96,6 +99,7 @@ body {
   background-repeat: no-repeat;
   height: 500px;
   background-attachment: fixed;
+  color: #000000;
 }
 
 .main__imgsuperior--clientes {
@@ -104,6 +108,7 @@ body {
   background-repeat: no-repeat;
   height: 500px;
   background-attachment: fixed;
+  color: #000000;
 }
 
 .main__imgsuperior--bna {
@@ -112,6 +117,7 @@ body {
   background-repeat: no-repeat;
   height: 500px;
   background-attachment: fixed;
+  color: #000000;
 }
 
 .main__imgsuperior--contacto {
@@ -120,6 +126,7 @@ body {
   background-repeat: no-repeat;
   height: 500px;
   background-attachment: fixed;
+  color: #000000;
 }
 
 .main__texto--inicio {
@@ -168,6 +175,14 @@ body {
   text-shadow: #ffff 5px 2px 3px;
 }
 
+.main__titulo--grande--bna {
+  font-family: "Bebas Neue", cursive;
+  font-size: 90px;
+  padding: 200px;
+  text-align: center;
+  text-shadow: #ffff 5px 2px 3px;
+}
+
 .main__titulo--medio {
   font-family: "Bebas Neue", cursive;
   font-size: 40px;
@@ -176,21 +191,11 @@ body {
 
 .main__titulo--chico {
   font-size: 32px;
-  margin: 40px 0px;
+  margin: 30px 0px 20px;
 }
 
 .main__contenedor {
-  padding: 50px 10%;
-}
-
-.main__contenedor--grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  justify-self: center;
-  grid-template-areas: "text img";
+  padding: 40px 10%;
 }
 
 .main__titulo {
@@ -202,13 +207,6 @@ body {
 .main__texto {
   font-size: 25px;
   margin: 8px;
-  grid-area: "text";
-}
-
-.main__img--grid {
-  height: 380px;
-  margin: 10px;
-  grid-area: "img";
 }
 
 .main__titulo--section {
@@ -224,6 +222,10 @@ body {
   height: 450px;
 }
 
+.main__texto li {
+  list-style: disc;
+}
+
 .main__titulo--nclientes {
   font-family: "Bebas Neue", cursive;
   font-size: 52px;
@@ -236,8 +238,7 @@ body {
   justify-content: center;
 }
 
-
-.main__texto--nclientes{
+.main__texto--nclientes {
   font-size: 25px;
   text-align: center;
   margin: 45px 0px;
@@ -251,75 +252,168 @@ body {
   margin: 20px;
 }
 
-.main__titulo--servicios{
+.main__titulo--servicios {
   font-family: "Bebas Neue", cursive;
   font-size: 55px;
   color: #000000;
-  margin:30px 0px 0px;
+  margin: 65px 0px 0px;
   text-align: center;
-}
-
-.main__texto--clientes {
-  font-size: 25px;
-  text-align: center;
-  margin: 25px auto 60px;
 }
 
 .main__section {
   margin: 75px 75px;
-  text-align: left;
 }
 
-.main__texto--clientes{
+.main__texto--clientes {
   font-size: 25px;
   margin: 40px 0px;
   text-align: center;
 }
 
-.main__titulo--clientes{
+.main__titulo--clientes {
   font-family: "Bebas Neue", cursive;
   font-size: 40px;
   color: #000000;
-  margin:45px 0px;
+  margin: 45px 0px;
   text-align: center;
 }
 
-.main__img--clientes{
+.main__img--clientes {
   display: flex;
   justify-content: center;
   height: 400px;
-  margin:50px;
+  margin: 50px;
 }
 
-.main__credito{
+.main__credito {
   margin: 75px 75px;
   text-align: center;
 }
 
-.titulo__credito{
+.titulo__credito {
   display: flex;
   flex-direction: row;
   margin: 40px 0px;
   justify-content: center;
 }
 
-.main__img--credito{
+.main__img--credito {
   width: 50px;
 }
 
-.main__titulo--credito{
+.main__titulo--credito {
   font-size: 38px;
 }
 
-.main__texto--credito{
+.main__texto--credito {
   font-size: 25px;
   margin: 0px 0px;
   text-align: center;
 }
 
-.main__link--credito{
+.main__link--credito {
   font-size: 25px;
   margin: 30px 75px;
+}
+
+.main__texto--contacto {
+  font-size: 25px;
+  text-align: left;
+}
+
+.formulario {
+  margin: 40px;
+  font-size: 25px;
+}
+
+#btn-enviar {
+  margin: 1rem 0rem;
+  cursor: pointer;
+  background-color: #021f4b;
+}
+
+.btn-bna {
+  background: linear-gradient(102deg, #1d2ec4 40%, #2f19c0 60%);
+  color: #ffffff;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: .25rem;
+  min-width: 200px;
+  text-decoration: none;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+  animation: pulse 1.9s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(.99);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, .2);
+  }
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+      transform: scale(.99);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* GRILLA EXPERIENCIA */
+
+.main__contenedor--grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-self: center;
+  grid-template-areas: "text img";
+}
+
+/* GRILLA SERVICIOS */
+
+.main__img--grid {
+  height: 380px;
+  margin: 10px;
+  grid-area: img;
+}
+
+.main__texto--grid {
+  font-size: 25px;
+  margin: 8px;
+  grid-area: text;
+}
+
+.main__texto--grid2 {
+  margin: 8px;
+  grid-area: z;
+}
+
+.main__img--grid2 {
+  height: 380px;
+  margin: 10px;
+  grid-area: y;
+}
+
+.main__contenedor--servicios {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-self: center;
+  grid-template-areas: "text img";
+}
+
+.main__contenedor--servicios2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  justify-self: center;
+  grid-template-areas: "y z";
 }
 
 
@@ -400,7 +494,7 @@ body {
   height: 130px;
   width: 350px;
   text-align: start;
-  margin: 20px;
+  margin: 32px;
 }
 
 .footer__texto {
@@ -423,8 +517,9 @@ body {
 /* ------MOVIL---- */
 
 @media (max-width: 768px) {
-  .header__navbar {
-    display: none;
+  .main__imgsuperior--inicio h2 {
+    font-size: 15;
+    padding: 0;
   }
 
   .header__contacto {
@@ -434,11 +529,6 @@ body {
   .header__container {
     flex-direction: row-reverse;
     align-items: center;
-  }
-
-  .header__menu {
-    display: inline;
-    padding-right: 5%;
   }
 
   .header__menu img {
@@ -451,6 +541,11 @@ body {
     width: 120px;
   }
 
+  .main__titulo--grande--bna {
+    padding: 60px;
+  }
+
+  /* 
   .main__imgsuperior--inicio {
     width: 800px;
     height: 600px;
@@ -463,7 +558,7 @@ body {
   .main__texto--inicio {
     padding: 0;
   }
-
+ */
   .main__grilla--noticias {
     display: grid;
     padding: 20px;
@@ -489,7 +584,7 @@ body {
     grid-template-rows: auto auto auto auto;
   }
 
-  .main__contenido {
+  .main__contenedor--grid {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-template-areas:
@@ -497,9 +592,31 @@ body {
       "img";
   }
 
+  .main__contenedor--servicios {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "text"
+      "img";
+  }
+
+  .main__contenedor--servicios2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "z"
+      "y";
+  }
+
   .footer__logo {
     height: 80px;
     width: 90px;
-    margin-left: 60px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
   }
 }
