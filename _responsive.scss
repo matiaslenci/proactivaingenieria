@@ -1,0 +1,190 @@
+/* -------RESPONSIVE---- */
+
+/* ------TABLET---- */
+
+@media (max-width: 990px) {
+  /* HEADER */
+  .header {
+    #header__contacto--movil {
+      display: none;
+    }
+
+    .header__container {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .header__menu img {
+      width: 70px;
+    }
+
+    .header__logo {
+      margin: 20px;
+      height: 90px;
+      width: 120px;
+    }
+  }
+
+  .main__contenedor {
+    padding: 60px;
+  }
+  /* IMG SUPERIOR */
+  .main__imgsuperior--inicio {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .main__imgsuperior--servicios {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .main__imgsuperior--noticias {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .main__imgsuperior--clientes {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .main__imgsuperior--bna {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .main__imgsuperior--contacto {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .main__texto--inicio {
+    padding: 3.125rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main__titulo--grandebna {
+    padding: 50px 0px 0px;
+  }
+
+  .main__grilla--noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "co2 nivel"
+      "a ambiente"
+      "b riesgoso"
+      "c muyriesgoso";
+  }
+
+  .main__img--nclientesmovil {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__img--nclientes {
+    display: none;
+  }
+
+  .main__cualidades {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 50px 180px 0px;
+  }
+
+  .main__contenedor--grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "text"
+      "img";
+  }
+
+  .main__contenedor--servicios {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "text"
+      "img";
+  }
+
+  .main__contenedor--servicios2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "z"
+      "y";
+  }
+
+  .main_section {
+    margin: 0px;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer__logo {
+      height: 80px;
+      width: 90px;
+      margin: 10px 0px 0px 0px;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .footer__texto {
+      text-align: center;
+    }
+  }
+}
+
+/* MOVIL */
+@media (max-width: 576px) {
+  .main__titulo--grande {
+    padding: 200px 0px 200px;
+  }
+
+  .main__contenedor {
+    padding: 0px 20px 0px;
+  }
+
+  .main__texto--inicio {
+    width: 100%;
+    padding: 30px 0px 0px;
+  }
+  .main__cualidades {
+    padding: 50px 90px 0px;
+  }
+
+  .main__contenedor--grid {
+    .main__img--grid {
+      height: 250px;
+    }
+  }
+
+  .main__img--nclientesmovil {
+    height: 300px;
+  }
+
+  .main__img--clientes {
+    height: 200px;
+  }
+
+  .main__formulario {
+    margin: 0px;
+    font-size: 25px;
+  }
+
+  .footer {
+    .footer__contacto {
+      margin: 0px 0px 50px;
+    }
+  }
+}

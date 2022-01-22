@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon/proactivafavicon.ico" type="image/x-icon">
     <title>proactivaingenieria</title>
+    
+<!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="./css-bt/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -21,7 +26,7 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class="header__contacto">
+        <div class="header__contacto" id="header__contacto--movil">
             <img src="./icon/outline_location_on_white_24dp.png" alt="locacion" class="header__icono"> Santiago de Chile
             2801,
             Santa Fe,
@@ -65,123 +70,133 @@
                     </div>
                 </div>
             </nav>
+    </header>
 
-            <!--    MAIN -->
+    <!------ MAIN ------->
 
-            <main class="main">
+    <!-- IMAGEN SUPERIOR -->
+    <main class="main">
 
-                <div class="main__imgsuperior--inicio">
-                    <h2 class="main__texto--inicio">Soluciones en aireación, ventilación y filtrado Gestion y
-                        mantenimiento de
-                        activos</h2>
-                </div>
+        <div class="main__imgsuperior--inicio container-fluid">
+            <h2 class="main__texto--inicio">Soluciones en aireación, ventilación y filtrado Gestion y
+                mantenimiento de
+                activos</h2>
+        </div>
+        <!-- CUALIDADES PROACTIVA -->
+        <section class="main__cualidades">
+            <!-- NOSOTROS -->
+            <div>
+                <img src="./icon/grupo-48.png" alt="icono de grupo">
+                <h4 class="main__cualidades--titulo">Nosotros</h4>
+                <p class="main__cualidades--texto">
+                    Nos dedicamos al cálculo, desarrollo, fabricación y comercialización de sistemas que
+                    involucren
+                    al
+                    aire
+                    como fluido de trabajo, ofreciendo tanto productos estándar como a pedido del cliente.
+                </p>
+            </div>
+            <!-- NUESTRA FILOSOFIA -->
+            <div>
+                <img src="./icon/foco-48.png" alt="icono de foco">
+                <h4 class="main__cualidades--titulo">Nuestra filosofía</h4>
+                <p class="main__cualidades--texto">
+                    Nos dedicamos al cálculo, desarrollo, fabricación y comercialización de sistemas que
+                    involucren
+                    al
+                    aire
+                    como fluido de trabajo, ofreciendo tanto productos estándar como a pedido del cliente.
+                </p>
+            </div>
+            <!-- NUESTRA MISION -->
+            <div>
+                <img src="./icon/aviondepapel-48.png" alt="icono avion de papel">
+                <h4 class="main__cualidades--titulo">Nuestra misión</h4>
+                <p class="main__cualidades--texto">
+                    Brindar soluciones de aireación y ventilación enfocadas en mejorar los procesos productivos
+                    de
+                    nuestros
+                    clientes, aplicando esfuerzo en ofrecer productos de calidad a precios competitivos.
+                </p>
+            </div>
+            <!-- SERVICIOS -->
+            <div>
+                <img src="./icon/llave-48.png" alt="icono de llave">
+                <h4 class="main__cualidades--titulo">Servicios</h4>
+                <p class="main__cualidades--texto">
+                    Diseñamos y fabricamos sistemas de aire, además de ofrecer el servicio de montaje y
+                    mantenimiento de
+                    los
+                    mismos; entregando sistemas llave en mano al cliente.
+                </p>
+            </div>
+        </section>
 
-                <section class="main__cualidades">
-                    <div>
-                        <img src="./icon/grupo-48.png" alt="icono de grupo">
-                        <h4 class="main__cualidades--titulo">Nosotros</h4>
-                        <p class="main__cualidades--texto">
-                            Nos dedicamos al cálculo, desarrollo, fabricación y comercialización de sistemas que
-                            involucren
-                            al
-                            aire
-                            como fluido de trabajo, ofreciendo tanto productos estándar como a pedido del cliente.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./icon/foco-48.png" alt="icono de foco">
-                        <h4 class="main__cualidades--titulo">Nuestra filosofía</h4>
-                        <p class="main__cualidades--texto">
-                            Nos dedicamos al cálculo, desarrollo, fabricación y comercialización de sistemas que
-                            involucren
-                            al
-                            aire
-                            como fluido de trabajo, ofreciendo tanto productos estándar como a pedido del cliente.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./icon/aviondepapel-48.png" alt="icono avion de papel">
-                        <h4 class="main__cualidades--titulo">Nuestra misión</h4>
-                        <p class="main__cualidades--texto">
-                            Brindar soluciones de aireación y ventilación enfocadas en mejorar los procesos productivos
-                            de
-                            nuestros
-                            clientes, aplicando esfuerzo en ofrecer productos de calidad a precios competitivos.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="./icon/llave-48.png" alt="icono de llave">
-                        <h4 class="main__cualidades--titulo">Servicios</h4>
-                        <p class="main__cualidades--texto">
-                            Diseñamos y fabricamos sistemas de aire, además de ofrecer el servicio de montaje y
-                            mantenimiento de
-                            los
-                            mismos; entregando sistemas llave en mano al cliente.
-                        </p>
-                    </div>
-                </section>
-                <section class="main__contenedor">
-                    <h3 class="main__titulo">Experiencia</h3>
-                    <div class="main__contenedor--grid">
-                        <p class="main__texto--grid">
-                            Somos una empresa formada por ingenieros y técnicos con 20 años de experiencia dentro de
-                            grandes
-                            industrias, que brinda soluciones integrales en aireación, ventilación y filtrado; y
-                            servicios
-                            de
-                            mantenimiento eléctrico y mecánico.
-                            Realizamos proyectos de ventilación en áreas comunes y calificadas, para los cuales
-                            integramos
-                            los
-                            productos que ofrecemos y los que, gracias al servicio de montaje y mantenimiento que
-                            realizamos,
-                            cierran el ciclo de un sistema completo, entregando así nuestra empresa soluciones “llave en
-                            mano”.
-                        </p>
-                        <img src="./img/proactivaexperiencia.jpg" alt="proactiva experiencia" class="main__img--grid">
-                    </div>
-                </section>
-                <section>
-                    <h3 class="main__titulo--nclientes"> Nuestros clientes </h3>
-                    <div class="main__img--nclientes">
-                        <img src="./img/nuestrosclientes.jpg" alt="clientes proactiva">
-                    </div>
-                    <div class="main__img--nclientesmovil">
-                        <img src="./img/nuestrosclientesmovil.jpg" alt="clientes proactiva">
-                    </div>
-                    <div>
-                        <p class="main__texto--nclientes"> Diseñamos y fabricamos sistemas de aire, además de ofrecer el
-                            servicio
-                            de montaje y
-                            mantenimiento de
-                            los mismos; entregando sistemas llave en mano al cliente.</p>
-                    </div>
-                </section>
-            </main>
+        <!-- EXPERIENCIA -->
 
-            <!-- FOOTER -->
+        <section class="main__contenedor">
+            <h3 class="main__titulo">Experiencia</h3>
+            <div class="main__contenedor--grid">
+                <p class="main__texto--grid">
+                    Somos una empresa formada por ingenieros y técnicos con 20 años de experiencia dentro de
+                    grandes
+                    industrias, que brinda soluciones integrales en aireación, ventilación y filtrado; y
+                    servicios
+                    de
+                    mantenimiento eléctrico y mecánico.
+                    Realizamos proyectos de ventilación en áreas comunes y calificadas, para los cuales
+                    integramos
+                    los
+                    productos que ofrecemos y los que, gracias al servicio de montaje y mantenimiento que
+                    realizamos,
+                    cierran el ciclo de un sistema completo, entregando así nuestra empresa soluciones “llave en
+                    mano”.
+                </p>
+                <img src="./img/proactivaexperiencia.jpg" alt="proactiva experiencia" class="main__img--grid">
+            </div>
+        </section>
+        <!-- NUESTROS CLIENTES -->
+        <section>
+            <h3 class="main__titulo--nclientes"> Nuestros clientes </h3>
+            <div class="main__img--nclientes">
+                <img src="./img/nuestrosclientes.jpg" alt="clientes proactiva">
+            </div>
+            <div class="main__img--nclientesmovil">
+                <img src="./img/nuestrosclientesmovil.jpg" alt="clientes proactiva">
+            </div>
+            <div>
+                <p class="main__texto--nclientes"> Diseñamos y fabricamos sistemas de aire, además de ofrecer el
+                    servicio
+                    de montaje y
+                    mantenimiento de
+                    los mismos; entregando sistemas llave en mano al cliente.</p>
+            </div>
+        </section>
+    </main>
 
-            <footer class="footer">
-                <div class="footer__contacto">
-                    <p>¡Contáctenos para solicitar asesoramiento!
-                        Tel: 342-4725519 <br>
-                        Santiago de Chile 2801 – Santa Fe
-                        info@proactivaingenieria.com
-                        ing@proactivaingenieria.com
-                        ventas@proactivaingenieria.com
-                    </p>
-                </div>
-                <div>
-                    <img src="./img/logoproactiva.jpg" alt="logo proactiva" class="footer__logo">
-                </div>
-                <div>
-                    <p class="footer__texto">Soluciones en aireación, ventilación y filtrado
-                        Gestion y mantenimiento de activos</p>
-                </div>
-            </footer>
+    <!-- FOOTER -->
 
-            <!-- JAVASCRIP BOOTSTARP -->
-            <script src="./js-bt/bootstrap.min.js"></script>
+    <footer class="footer">
+        <div class="footer__contacto">
+            <p>¡Contáctenos para solicitar asesoramiento!
+                Tel: 342-4725519 <br>
+                Santiago de Chile 2801 – Santa Fe
+                info@proactivaingenieria.com
+                ing@proactivaingenieria.com
+                ventas@proactivaingenieria.com
+            </p>
+        </div>
+        <div>
+            <img src="./img/logoproactiva.jpg" alt="logo proactiva" class="footer__logo">
+        </div>
+        <div>
+            <p class="footer__texto">Soluciones en aireación, ventilación y filtrado
+                Gestion y mantenimiento de activos</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIP BOOTSTARP -->
+    <script src="./js-bt/bootstrap.min.js"></script>
 
 
 </body>

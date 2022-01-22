@@ -1,0 +1,31 @@
+/* ---------FOOTER-------- */
+
+.footer {
+  background-color: $color-azul;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  .footer__contacto {
+    font-size: 18px;
+    color: white;
+    height: 130px;
+    width: 350px;
+    text-align: start;
+    margin: 32px;
+  }
+
+  .footer__texto {
+    font-size: 15px;
+    text-align: left;
+    color: white;
+    padding: 30px;
+  }
+
+  .footer__logo {
+    height: 80px;
+    width: 90px;
+    margin-left: 350px;
+  }
+}

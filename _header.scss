@@ -1,0 +1,59 @@
+/* -----HEADER------- */
+
+.header {
+  .header__contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+    background-color: rgb(2, 33, 79);
+    font-size: 16px;
+    text-align-last: right;
+    background-size: cover;
+    color: white;
+    height: 30px;
+  }
+
+  .header__icono {
+    height: 20px;
+  }
+
+  .header__logo {
+    margin: 20px;
+    height: 80px;
+    width: 90px;
+  }
+}
+
+/* -----NAVBAR------ */
+.header__navbar {
+  ul {
+    padding: 30px;
+    font-size: 28px;
+  }
+
+  a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-family: $font-bebas, cursive;
+    text-decoration: none;
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+}
+.nav-item {
+  &:hover {
+    border-bottom: 3px solid #000000;
+    text-shadow: #ffff 2px 2px 3px;
+    background-color: #cfcfcf;
+  }
+}

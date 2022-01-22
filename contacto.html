@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon/proactivafavicon.ico" type="image/x-icon">
     <title>proactivaingenieria</title>
-    <link rel="stylesheet" href="./css-bt/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    
+<!-- HOJAS DE ESTILO -->
+<link rel="stylesheet" href="./css-bt/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/estilos.css">
+
+<!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -22,7 +27,7 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class="header__contacto">
+        <div class="header__contacto" id="header__contacto--movil">
             <img src="./icon/outline_location_on_white_24dp.png" alt="locacion" class="header__icono"> Santiago de Chile
             2801,
             Santa Fe,
@@ -67,99 +72,108 @@
                     </div>
                 </div>
             </nav>
+    </header>
 
-            <!-- MAIN -->
+    <!-- MAIN -->
 
-            <main class="main">
-                <div class="main__imgsuperior--contacto">
-                    <h1 class="main__titulo--grande">
-                        Contacto
-                    </h1>
+    <!-- IMAGEN SUPERIOR -->
+    <main class="main">
+        <div class="main__imgsuperior--contacto">
+            <h1 class="main__titulo--grande">
+                Contacto
+            </h1>
+        </div>
+
+        <!-- TEXTO -->
+        <section class="main__section">
+            <div>
+                <p class="main__texto--contacto">
+                    ¡Contáctenos para solicitar asesoramiento! Somos Proactiva Ingeniería: una empresa formada
+                    por
+                    ingenieros y técnicos con 20 años de experiencia dentro de grandes industrias, que brinda
+                    soluciones
+                    integrales en aireación, ventilación, filtrado y climatización; y mantenimiento eléctrico y
+                    mecánico.
+                    Diseñamos, proyectamos y fabricamos sistemas utilizados en ambientes industriales y áreas
+                    calificadas,
+                    como la farmacéutica o la alimenticia.
+                    Además, proveemos soluciones en la prevención del COVID-19, a través de la provisión de:
+                    purificadores
+                    de aire, unidades de manejo y acondicionamiento de aire, enfriadores evaporativos,
+                    extractores e
+                    inyectores de aire, conductos de aireación y ventilación, ventiladores industriales, equipos
+                    de
+                    filtrado
+                    especifico, etc.
+                </p>
+            </div>
+        </section>
+        <!-- FORMULARIO -->
+
+        <section class="main__formulario container">
+
+            <!-- --------NOMBRE Y APELLIDO-------- -->
+            <div class="row g-3 ">
+                <div class="col">
+                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" aria-label="First name">
                 </div>
-                <section class="main__section">
-                    <form action=""></form>
-                    <div>
-                        <p class="main__texto--contacto">
-                            ¡Contáctenos para solicitar asesoramiento! Somos Proactiva Ingeniería: una empresa formada
-                            por
-                            ingenieros y técnicos con 20 años de experiencia dentro de grandes industrias, que brinda
-                            soluciones
-                            integrales en aireación, ventilación, filtrado y climatización; y mantenimiento eléctrico y
-                            mecánico.
-                            Diseñamos, proyectamos y fabricamos sistemas utilizados en ambientes industriales y áreas
-                            calificadas,
-                            como la farmacéutica o la alimenticia.
-                            Además, proveemos soluciones en la prevención del COVID-19, a través de la provisión de:
-                            purificadores
-                            de aire, unidades de manejo y acondicionamiento de aire, enfriadores evaporativos,
-                            extractores e
-                            inyectores de aire, conductos de aireación y ventilación, ventiladores industriales, equipos
-                            de
-                            filtrado
-                            especifico, etc.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="formulario container">
-                    <!-- --------NOMBRE Y APELLIDO-------- -->
-                    <div class="row g-3 ">
-                        <div class="col">
-                            <label for="formGroupExampleInput" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" aria-label="First name">
-                        </div>
-                        <div class="col">
-                            <label for="formGroupExampleInput" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" aria-label="Last name">
-                        </div>
-                    </div>
-                    <!-- PROVINCIA Y NUMERO -->
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label">Número de telefono</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
-                    </div>
-                    <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">Provincia o Estado</label>
-                        <input type="number" class="form-control" id="formGroupExampleInput2">
-                    </div>
-                    <!-- EMAIL Y MENSAJE -->
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Comentario o mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                            placeholder="Escriba su mensaje..." rows="3"></textarea>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-secondary btn-lg" id="btn-enviar">Enviar</button>
-                    </div>
-                </section>
-
-            </main>
-
-            <!-- FOOTER -->
-
-            <footer class="footer">
-                <div>
-                    <p class="footer__contacto">¡Contáctenos para solicitar asesoramiento!
-                        Tel: 342-4725519
-                        Santiago de Chile 2801 – Santa Fe
-                        info@proactivaingenieria.com
-                        ing@proactivaingenieria.com
-                        ventas@proactivaingenieria.com
-                    </p>
+                <div class="col">
+                    <label for="formGroupExampleInput" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" aria-label="Last name">
                 </div>
-                <img src="img/logoproactiva.jpg" alt="logo proactiva" class="footer__logo">
-                <div>
-                    <p class="footer__texto">Soluciones en aireación, ventilación y filtrado
-                        Gestion y mantenimiento de activos</p>
-                </div>
-            </footer>
+            </div>
 
-            <!-- JAVASCRIP BOOTSTARP -->
-            <script src="./js-bt/bootstrap.min.js"></script>
+            <!-- PROVINCIA Y NUMERO -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Número de telefono</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Provincia o Estado</label>
+                <input type="number" class="form-control" id="formGroupExampleInput2">
+            </div>
+
+            <!-- EMAIL Y MENSAJE -->
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <!-- MENSAJE -->
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentario o mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje..."
+                    rows="3"></textarea>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary btn-lg" id="btn-enviar">Enviar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div>
+            <p class="footer__contacto">¡Contáctenos para solicitar asesoramiento!
+                Tel: 342-4725519
+                Santiago de Chile 2801 – Santa Fe
+                info@proactivaingenieria.com
+                ing@proactivaingenieria.com
+                ventas@proactivaingenieria.com
+            </p>
+        </div>
+        <img src="img/logoproactiva.jpg" alt="logo proactiva" class="footer__logo">
+        <div>
+            <p class="footer__texto">Soluciones en aireación, ventilación y filtrado
+                Gestion y mantenimiento de activos</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIP BOOTSTARP -->
+    <script src="./js-bt/bootstrap.min.js"></script>
 
 
 </body>

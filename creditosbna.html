@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon/proactivafavicon.ico" type="image/x-icon">
     <title>proactivaingenieria</title>
-    <link rel="stylesheet" href="./css-bt/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    
+<!-- HOJAS DE ESTILO -->
+<link rel="stylesheet" href="./css-bt/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/estilos.css">
+
+<!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -22,7 +27,7 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class="header__contacto">
+        <div class="header__contacto" id="header__contacto--movil">
             <img src="./icon/outline_location_on_white_24dp.png" alt="locacion" class="header__icono"> Santiago de Chile
             2801,
             Santa Fe,
@@ -67,17 +72,21 @@
                     </div>
                 </div>
             </nav>
+    </header>
 
     <!-- MAIN -->
 
+    <!-- IMAGEN SUPERIOR -->
     <main class="main">
         <div>
-        <div class="main__imgsuperior--bna">
-            <h1 class="main__titulo--grande--bna">
-                Créditos Banco Nación Argentina
-            </h1>
+            <div class="main__imgsuperior--bna">
+                <h1 class="main__titulo--grandebna">
+                    Créditos Banco Nación Argentina
+                </h1>
+            </div>
         </div>
-    </div>
+
+        <!-- TEXTO CREDITO -->
         <section class="main__credito">
             <div class="container">
                 <img src="icon/tarjetadecredito-48.png" alt="tarjeta de credito" class="main__img--credito">
@@ -85,7 +94,7 @@
                     ¡Nueva línea de crédito!
                 </h2>
             </div>
-            <p class="main__texto--credito">
+            <p class="main__texto">
                 Queremos ayudar a uno de los sectores más afectados por la pandemia: bares y restaurantes. Para que
                 puedan financiar la adquisición de equipos de ventilación y el acondicionamiento de espacios exteriores
                 No te pierdas los créditos a tasa 0 del Banco de la Nación Argentina
@@ -93,15 +102,15 @@
                 Modalidad pesos.
                 Plazo de gracia 12 meses.
 
+                <!-- LINKS -->
             </p>
             <div class="main__link--credito">
                 <p> Más información en:</p>
-<!--                 <button type="button" class="btn btn-primary btn-lg" id="btn-gradiente" href="https://www.bna.com.ar/Empresas/Novedades/CreditosParaBaresYRestaurantes">Banco Nación Argentina</button>
-            </div>  -->
-            <div>
-                <a href="https://www.bna.com.ar/Empresas/Novedades/CreditosParaBaresYRestaurantes" class="btn-bna">Banco Nación Argentina</a>
-            </div>
-            
+                <div class="main__btn">
+                    <a href="https://www.bna.com.ar/Empresas/Novedades/CreditosParaBaresYRestaurantes"
+                        class="btn-bna">Banco Nación Argentina</a>
+                </div>
+
 
         </section>
     </main>

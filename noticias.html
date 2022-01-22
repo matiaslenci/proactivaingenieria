@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon/proactivafavicon.ico" type="image/x-icon">
     <title>proactivaingenieria</title>
+
+    <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="./css-bt/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -21,7 +26,7 @@
     <!-- HEADER -->
 
     <header class="header">
-        <div class="header__contacto">
+        <div class="header__contacto" id="header__contacto--movil">
             <img src="./icon/outline_location_on_white_24dp.png" alt="locacion" class="header__icono"> Santiago de Chile
             2801,
             Santa Fe,
@@ -65,14 +70,17 @@
                     </div>
                 </div>
             </nav>
+    </header>
 
     <!-- MAIN -->
 
+    <!-- IMAGEN SUPERIOR -->
     <main class="main">
-        <div class="main__imgsuperior--noticias">
+        <div class="main__imgsuperior--noticias container-fluid">
             <h1 class="main__titulo--grande">Noticias</h1>
         </div>
 
+        <!-- MONITOREO CO2 -->
         <section class="main__section">
             <h3 class="main__titulo--chico">
                 Consideraciones para el monitoreo de co2 en ambientes interiores
@@ -108,6 +116,8 @@
                     que
                     utilizan el espacio.</li>
             </ul>
+
+            <!-- GRILLA NIVELES DE CO2 -->
             <div>
                 <h3 class="main__titulo--chico">Niveles de CO2 y porcentaje de aire exhalado estimados</h3>
             </div>
@@ -168,12 +178,16 @@
                     ventilación y
                     tratamiento de aire, pues algunas instalaciones pueden requerir asesoramiento adicional.</li>
             </ul>
-            <br>
-            <div class="main__texto">
-                FUENTE:<a
-                    href="https://www.argentina.gob.ar/ciencia/unidad-coronavirus/ventilar">https://www.argentina.gob.ar/ciencia/unidad-coronavirus/ventilar</a>
+            <!-- LINKS -->
+            <div class="main__texto">Fuente:
+                <a href="https://www.argentina.gob.ar/ciencia/unidad-coronavirus/ventilar"
+                    class="btn btn-secondary btn-lg" id="btn-enviar">
+                    Leer mas
+                </a>
             </div>
         </section>
+
+        <!-- VENTILACION AMBIENTE -->
         <section class="main__section">
             <div>
                 <h3 class="main__titulo--chico">La importancia de la ventilación en el ambiente de trabajo</h3>
@@ -199,11 +213,15 @@
                 un
                 especialista o empresa profesional en ventilación.
             </p>
-            <br>
-            <div class="main__texto">
-                FUENTE: <a
-                    href="https://www.serkingelsalvador.com/importancia-de-ventilacion-en-el-trabajo">https://www.serkingelsalvador.com/importancia-de-ventilacion-en-el-trabajo</a>
+
+            <!-- LINKS -->
+            <div class="main__texto">Fuente:
+                <a href="https://www.serkingelsalvador.com/importancia-de-ventilacion-en-el-trabajo"
+                    class="btn btn-secondary btn-lg" id="btn-enviar">
+                    Leer mas
+                </a>
             </div>
+
         </section>
     </main>
 

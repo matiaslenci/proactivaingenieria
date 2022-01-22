@@ -1,0 +1,20 @@
+
+@import "variables";
+@import "main";
+@import "header";
+@import "footer";
+@import "responsive";
+
+/* RESET */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #cfcfcf;
+}
