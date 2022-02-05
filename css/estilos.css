@@ -189,6 +189,7 @@
   font-size: 52px;
   text-align: center;
   margin: 20px;
+  color: #000000;
 }
 
 .main__texto--nclientes {
@@ -484,6 +485,11 @@
   text-align: left;
 }
 
+.main__texto--centrado {
+  font-size: 25px;
+  text-align: center;
+}
+
 .main__formulario {
   margin: 40px;
   font-size: 25px;
@@ -493,6 +499,26 @@
   margin: 1rem 0rem;
   cursor: pointer;
   background-color: #021f4b;
+}
+
+.contenedor__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#btn__redes {
+  margin: 1.5rem 2rem;
 }
 
 /* -----HEADER------- */
@@ -704,6 +730,18 @@
   .main_section {
     margin: 0px;
   }
+  .contenedor__contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #btn__redes {
+    margin: 1rem;
+  }
   /* FOOTER */
   .footer {
     -webkit-box-orient: vertical;
@@ -764,6 +802,17 @@
   }
 }
 
+/* MAPA */
+/* MAPA */
+.facebook {
+  color: #0606f5;
+}
+
+.whatsapp {
+  color: #0ae40a;
+}
+
+/* MAP - GET */
 /* RESET */
 * {
   padding: 0px;

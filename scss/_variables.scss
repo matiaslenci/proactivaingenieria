@@ -1,0 +1,22 @@
+
+$color-azul: #021f4b;
+
+$font-bebas: "Bebas Neue";
+
+/* MAPA */
+$mapsRedes:(
+facebook :rgb(6, 6, 245),
+whatsapp:rgb(10, 228, 10)); 
+/* MAPA */
+@each $darkblue, $color in $mapsRedes {
+    .#{$darkblue} {
+        color: $col20or;
+    }
+}
+
+/* MAP - GET */
+
+$estilo:(
+    colorNegro:black,
+    tamFuente:50px,
+);

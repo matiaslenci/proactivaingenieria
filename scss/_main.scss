@@ -78,8 +78,8 @@
 
 .main__titulo {
   font-family: $font-bebas, cursive;
-  font-size: 50px;
-  color: #000000;
+  font-size: map-get($estilo, tamFuente);
+  color: map-get($estilo, colorNegro);
 }
 
 .main__titulo--section {
@@ -192,6 +192,7 @@
   font-size: 52px;
   text-align: center;
   margin: 20px;
+  color: #000000;
 }
 
 .main__texto--nclientes {
@@ -277,51 +278,48 @@
     "c muyriesgoso";
 }
 
-.main__grilla--1 {
+@mixin grilla {
   font-size: 28px;
   border: 1px solid #000000;
+}
+
+.main__grilla--1 {
+  @include grilla;
   grid-area: co2;
 }
 
 .main__grilla--2 {
-  font-size: 28px;
-  border: 1px solid #000000;
+  @include grilla;
   grid-area: a;
 }
 
 .main__grilla--3 {
-  font-size: 28px;
-  border: 1px solid #000000;
+  @include grilla;
   grid-area: b;
 }
 
 .main__grilla--4 {
-  font-size: 28px;
-  border: 1px solid #000000;
+  @include grilla;
   grid-area: c;
 }
 
 .main__grilla--5 {
-  font-size: 28px;
-  border: 1px solid #000000;
+  @include grilla;
   grid-area: nivel;
 }
 
 .main__grilla--6 {
-  font-size: 28px;
-  border: 1px solid #000000;
+  @include grilla;
   grid-area: ambiente;
 }
 
 .main__grilla--7 {
-  font-size: 28px;
-  border: 1px solid #000000;
+  @include grilla;
   grid-area: riesgoso;
 }
 
 .main__grilla--8 {
-  font-size: 28px;
-  border: 1px solid #000000;
+  @include grilla;
   grid-area: muyriesgoso;
 }
 
@@ -414,6 +412,10 @@
   text-align: left;
 }
 
+.main__texto--centrado {
+  @extend .main__texto--contacto;
+}
+
 .main__formulario {
   margin: 40px;
   font-size: 25px;
@@ -423,4 +425,15 @@
   margin: 1rem 0rem;
   cursor: pointer;
   background-color: $color-azul;
+}
+
+.contenedor__contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn__redes {
+  margin: 1.5rem 2rem;
 }

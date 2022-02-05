@@ -122,6 +122,15 @@
     margin: 0px;
   }
 
+  .contenedor__contacto{
+    display: flex;
+    flex-direction:column;
+  }
+
+  #btn__redes{
+    margin: 1rem;
+  }
+
   /* FOOTER */
   .footer {
     flex-direction: column;
