@@ -68,6 +68,7 @@
   background-image: url(../img/contacto.jpg);
   color: #000000;
   height: 500px;
+  background-position-y: 1.2rem ;
   background: {
     size: cover;
     repeat: no-repeat;
@@ -126,7 +127,6 @@
 
 .main__texto {
   font-size: 25px;
-  margin: 8px;
   li {
     list-style: disc;
   }
@@ -191,7 +191,6 @@
   font-family: $font-bebas, cursive;
   font-size: 52px;
   text-align: center;
-  margin: 20px;
   color: #000000;
 }
 
@@ -230,12 +229,10 @@
 
 .main__texto--grid {
   font-size: 25px;
-  margin: 8px;
   grid-area: text;
 }
 
 .main__texto--grid2 {
-  margin: 8px;
   grid-area: z;
 }
 
@@ -281,6 +278,7 @@
 @mixin grilla {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
 }
 
 .main__grilla--1 {
@@ -413,12 +411,31 @@
 }
 
 .main__texto--centrado {
-  @extend .main__texto--contacto;
+  text-align: center;
+  font-size: 25px;
 }
 
 .main__formulario {
-  margin: 40px;
+  background: #C9CCD3;
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: lighten;
+  box-shadow: 14px 19px 37px 11px rgba(30, 30, 60, 0.32);
+  border-radius: 30px;
+  padding: 30px;
+  width: 90%;
   font-size: 25px;
+  margin-bottom: 6rem;
+}
+
+.main__card{
+  background: #C9CCD3;
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: lighten;
+  box-shadow: 15px 16px 43px -11px rgba(30, 30, 60, 0.23);
+  border-radius: 30px;
+  padding: 30px;
+  width: 90%;
+  margin: 40px auto 40px auto;
 }
 
 #btn-enviar {

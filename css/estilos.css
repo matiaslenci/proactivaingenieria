@@ -1,3 +1,14 @@
+/* MAPA */
+/* MAPA */
+.facebook {
+  color: #0606f5;
+}
+
+.whatsapp {
+  color: #0ae40a;
+}
+
+/* MAP - GET */
 /* ------------MAIN-------------- */
 .main__section {
   margin: 75px 75px;
@@ -57,6 +68,7 @@
   background-image: url(../img/contacto.jpg);
   color: #000000;
   height: 500px;
+  background-position-y: 1.2rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -66,7 +78,7 @@
 .main__titulo {
   font-family: "Bebas Neue", cursive;
   font-size: 50px;
-  color: #000000;
+  color: black;
 }
 
 .main__titulo--section {
@@ -113,7 +125,6 @@
 
 .main__texto {
   font-size: 25px;
-  margin: 8px;
 }
 
 .main__texto li {
@@ -188,7 +199,6 @@
   font-family: "Bebas Neue", cursive;
   font-size: 52px;
   text-align: center;
-  margin: 20px;
   color: #000000;
 }
 
@@ -231,14 +241,12 @@
 
 .main__texto--grid {
   font-size: 25px;
-  margin: 8px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: text;
 }
 
 .main__texto--grid2 {
-  margin: 8px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: z;
@@ -293,6 +301,7 @@
 .main__grilla--1 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: co2;
@@ -301,6 +310,7 @@
 .main__grilla--2 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: a;
@@ -309,6 +319,7 @@
 .main__grilla--3 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: b;
@@ -317,6 +328,7 @@
 .main__grilla--4 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: c;
@@ -325,6 +337,7 @@
 .main__grilla--5 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: nivel;
@@ -333,6 +346,7 @@
 .main__grilla--6 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: ambiente;
@@ -341,6 +355,7 @@
 .main__grilla--7 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: riesgoso;
@@ -349,6 +364,7 @@
 .main__grilla--8 {
   font-size: 28px;
   border: 1px solid #000000;
+  padding: 10px;
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: muyriesgoso;
@@ -486,13 +502,35 @@
 }
 
 .main__texto--centrado {
-  font-size: 25px;
   text-align: center;
+  font-size: 25px;
 }
 
 .main__formulario {
-  margin: 40px;
+  background: #C9CCD3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: lighten;
+  -webkit-box-shadow: 14px 19px 37px 11px rgba(30, 30, 60, 0.32);
+          box-shadow: 14px 19px 37px 11px rgba(30, 30, 60, 0.32);
+  border-radius: 30px;
+  padding: 30px;
+  width: 90%;
   font-size: 25px;
+  margin-bottom: 6rem;
+}
+
+.main__card {
+  background: #C9CCD3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: lighten;
+  -webkit-box-shadow: 15px 16px 43px -11px rgba(30, 30, 60, 0.23);
+          box-shadow: 15px 16px 43px -11px rgba(30, 30, 60, 0.23);
+  border-radius: 30px;
+  padding: 30px;
+  width: 90%;
+  margin: 40px auto 40px auto;
 }
 
 #btn-enviar {
@@ -576,9 +614,9 @@
 }
 
 .nav-item:hover {
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px  solid #000000;
   text-shadow: #ffff 2px 2px 3px;
-  background-color: #cfcfcf;
+  background-color: #e1e2e6;
 }
 
 /* ---------FOOTER-------- */
@@ -802,17 +840,6 @@
   }
 }
 
-/* MAPA */
-/* MAPA */
-.facebook {
-  color: #0606f5;
-}
-
-.whatsapp {
-  color: #0ae40a;
-}
-
-/* MAP - GET */
 /* RESET */
 * {
   padding: 0px;
@@ -825,6 +852,9 @@
 }
 
 body {
-  background-color: #cfcfcf;
+  background: #C9CCD3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: lighten;
 }
 /*# sourceMappingURL=estilos.css.map */
