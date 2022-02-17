@@ -122,12 +122,12 @@
     margin: 0px;
   }
 
-  .contenedor__contacto{
+  .contenedor__contacto {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
   }
 
-  #btn__redes{
+  #btn__redes {
     margin: 1rem;
   }
 
@@ -184,6 +184,19 @@
 
   .main__img--clientes {
     height: 200px;
+  }
+
+  .main__contenedor {
+    padding: 5px;
+  }
+
+  #article__container {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .main__grilla--noticias {
+    padding: 0px;
   }
 
   .main__formulario {
