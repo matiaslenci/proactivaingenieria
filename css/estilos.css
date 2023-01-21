@@ -23,7 +23,7 @@
   background-image: url(../img/fondoinicio.jpg);
   color: #000000;
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,7 +33,7 @@
   background-image: url(../img/mantenimientoind.jpg);
   color: #000000;
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -43,7 +43,7 @@
   background-image: url(../img/noticias.jpg);
   color: #000000;
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -53,7 +53,7 @@
   background-image: url(../img/estrechodemanos.jpg);
   color: #000000;
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,7 +63,7 @@
   background-image: url(../img/banconacion.jpg);
   color: #000000;
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -73,7 +73,7 @@
   background-image: url(../img/contacto.jpg);
   color: #000000;
   height: 500px;
-  width: 100vw;
+  width: 100%;
   background-position-y: 1.2rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -301,7 +301,10 @@
   padding: 20px;
   -ms-grid-columns: 400px 400px;
       grid-template-columns: 400px 400px;
-      grid-template-areas: "co2 nivel" "a ambiente" "b riesgoso" "c muyriesgoso";
+      grid-template-areas: "co2 nivel"
+ "a ambiente"
+ "b riesgoso"
+ "c muyriesgoso";
 }
 
 .main__grilla--1 {
@@ -730,7 +733,10 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "co2 nivel" "a ambiente" "b riesgoso" "c muyriesgoso";
+        grid-template-areas: "co2 nivel"
+ "a ambiente"
+ "b riesgoso"
+ "c muyriesgoso";
   }
   .main__img--nclientesmovil {
     display: -webkit-box;
@@ -755,21 +761,24 @@
         grid-template-columns: auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
-        grid-template-areas: "text" "img";
+        grid-template-areas: "text"
+ "img";
   }
   .main__contenedor--servicios {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
-        grid-template-areas: "text" "img";
+        grid-template-areas: "text"
+ "img";
   }
   .main__contenedor--servicios2 {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
-        grid-template-areas: "z" "y";
+        grid-template-areas: "z"
+ "y";
   }
   .main_section {
     margin: 0px;
