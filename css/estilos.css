@@ -22,7 +22,7 @@
 .main__imgsuperior--inicio {
   background-image: url(../img/fondoinicio.jpg);
   color: #000000;
-  height: 500px;
+  height: 700px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 .main__imgsuperior--servicios {
   background-image: url(../img/mantenimientoind.jpg);
   color: #000000;
-  height: 500px;
+  height: 700px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 .main__imgsuperior--noticias {
   background-image: url(../img/noticias.jpg);
   color: #000000;
-  height: 500px;
+  height: 700px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@
 .main__imgsuperior--clientes {
   background-image: url(../img/estrechodemanos.jpg);
   color: #000000;
-  height: 500px;
+  height: 700px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 .main__imgsuperior--bna {
   background-image: url(../img/banconacion.jpg);
   color: #000000;
-  height: 500px;
+  height: 700px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 .main__imgsuperior--contacto {
   background-image: url(../img/contacto.jpg);
   color: #000000;
-  height: 500px;
+  height: 700px;
   width: 100%;
   background-position-y: 1.2rem;
   background-size: cover;
